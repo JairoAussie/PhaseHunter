@@ -1,9 +1,9 @@
 /* Treehouse FSJS Techdegree
  * Project 4 - OOP Game App
  * app.js */
-const phrase = new Phrase('Try to guess the phrase');
-console.log(phrase.phrase);
-const game = new Game();
-game.phrases.forEach((phrase, index) => {
-console.log(`Phrase ${index} - phrase: ${phrase.phrase}`);
-});
+let game;
+const btn_reset = document.getElementById('btn__reset');
+btn_reset.addEventListener('click', function(){
+    game = new Game();
+    game.startGame();
+})
