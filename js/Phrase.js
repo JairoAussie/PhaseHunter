@@ -23,6 +23,27 @@ class Phrase {
             myPhrase.appendChild(letter);
           }       
     };
-    
-
+    /**
+    * Checks if passed letter is in phrase
+    * @param (string) letter - Letter to check
+    */
+    checkLetter(letter) {
+        if (this.phrase.includes(letter)){
+            return true;
+        } else{
+            return false;
+        }
+    };
+    /**
+    * Displays passed letter on screen after a match is found
+    * @param (string) letter - Letter to display
+    */
+    showMatchedLetter(letter) {
+        let letterClass = '.'+letter;
+        const matchedLetters = document.querySelectorAll(letterClass);
+        console.log("tamaño total "+matchedLetters.length);
+        for (let i=0; i<matchedLetters.length; i++){
+            matchedLetters[i].classList.replace('hide', 'show');
+        }
+    };
 };

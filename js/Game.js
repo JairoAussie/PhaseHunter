@@ -30,6 +30,7 @@ class Game {
         this.activePhrase.addPhraseToDisplay();
         const overlay = document.getElementById('overlay');
         overlay.style.display = 'none';
+        this.activePhrase.showMatchedLetter('s');
     };
     
 };

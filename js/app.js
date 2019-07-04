@@ -6,4 +6,5 @@ const btn_reset = document.getElementById('btn__reset');
 btn_reset.addEventListener('click', function(){
     game = new Game();
     game.startGame();
+    
 })
