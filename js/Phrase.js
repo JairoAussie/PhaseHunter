@@ -41,7 +41,7 @@ class Phrase {
     showMatchedLetter(letter) {
         let letterClass = '.'+letter;
         const matchedLetters = document.querySelectorAll(letterClass);
-        console.log("tamaño total "+matchedLetters.length);
+        //console.log("tamaño total "+matchedLetters.length);
         for (let i=0; i<matchedLetters.length; i++){
             matchedLetters[i].classList.replace('hide', 'show');
         }
